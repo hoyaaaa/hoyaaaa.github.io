@@ -4,8 +4,8 @@ export default (props) => {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>HOYA TECH Profile</title>
+        <link rel="icon" href="/hoyatech-logo128.png" />
       </Head>
 
       <main>

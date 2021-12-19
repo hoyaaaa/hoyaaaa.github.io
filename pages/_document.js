@@ -6,8 +6,9 @@ export default class RootDocument extends Document {
             <Html>
                 <Head>
                     <meta charSet="utf-8" />
-                    <meta name="description" content="My First Static Website"/>
+                    <meta name="description" content="HOYA TECH page"/>
                     <meta name="keywords" content="nextjs,static,website" />
+                    <meta name="google-site-verification" content="wNBO74d0veQz9o6UYxEbLs7o_cHkeafkF9pKpShKaYA" />
                     <style global jsx>
                         {`
                             html, body, #__next {

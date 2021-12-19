@@ -27,7 +27,7 @@ export default class RootApp extends App {
         return (
             <>
                 <Head>
-                    <title>Static Website</title>
+                    <title>HOYA TECH</title>
                 </Head>
                 <Layout>
                     <Component {...other} />
