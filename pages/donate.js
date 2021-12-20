@@ -1,4 +1,8 @@
 import Head from 'next/head'
+import Container from '@mui/material/Container'
+import Paper from '@mui/material/Paper'
+import Typography from '@mui/material/Typography'
+import { Button } from '@mui/material'
 
 export default (props) => {
   return (
@@ -8,11 +12,21 @@ export default (props) => {
         <link rel="icon" href="/hoyatech-logo128.png" />
       </Head>
 
-      <main>
-        <h1 className="title">
-        To Be Updated
-        </h1>
-      </main>
+  
+      <Container maxWidth="sm" style={{height: '50vh', textAlign: 'center', justifyContent: 'center', verticalAlign: 'middle'}}>
+        <Paper elevation={10} sx={{ width: '100%', verticalAlign: 'middle', padding: '30px'}}>
+          <Typography variant="h3" component="div" gutterBottom>
+            Support by donating
+          </Typography>
+          <Typography variant="h5" gutterBottom component="div">
+            If you like this applications, please consider donating.
+            It is a great help to improve the development process and features.
+          </Typography>
+          <a href="https://www.buymeacoffee.com/hoyaaaa" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-green.png" alt="Buy Me A Coffee" height="41" width="174"/></a>
+        </Paper>
+      </Container>
+
+      
                       
       <style jsx>{`
         .container {
