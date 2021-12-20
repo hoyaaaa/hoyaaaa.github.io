@@ -2,6 +2,7 @@ import App from 'next/app';
 import Head from 'next/head';
 import React from 'react';
 import Layout from '../components/Layout';
+import TagManager from "react-gtm-module"
 
 const styles = {
     layout: {
@@ -21,7 +22,15 @@ const styles = {
     },
 }
 
+const tagManagerArgs = {
+    gtmId: "G-9R6JZLBDG0",
+}
+
 export default class RootApp extends App {
+    componentDidMount() {
+        TagManager.initialize(tagManagerArgs)
+    }
+
     render() {
         const { Component, ...other } = this.props;
         return (
