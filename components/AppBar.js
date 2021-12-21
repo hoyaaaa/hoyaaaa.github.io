@@ -3,16 +3,10 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import CardMedia from '@mui/material/CardMedia';
-import Link from 'next/link';
 import { useRouter } from "next/router";
 
 const pages = [
@@ -47,7 +41,9 @@ const ResponsiveAppBar = () => {
     <AppBar position="static" style={{ background: '#66c89e' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        <img onClick={() => router.push("/")} src="/images/hoyatech-logo.png" alt="hoyatech" style={{width: "150px"}}/>
+          <Button style={{ height: "100%" }}>
+            <img onClick={() => router.push("/")} src="/images/hoyatech-logo.png" alt="hoyatech" style={{ width: "150px" }}/>
+          </Button>
           <Box alignItems="center"
   justifyContent="center" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -55,6 +51,7 @@ const ResponsiveAppBar = () => {
                 key={page.name}
                 onClick={() => router.push(page.url)}
                 sx={{ my: 2, color: 'white', display: 'block' }}
+                style={{ height: "100%" }}
               >
                 {page.name}
               </Button>

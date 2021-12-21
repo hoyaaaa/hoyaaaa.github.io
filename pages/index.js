@@ -1,5 +1,6 @@
-import { Container, Grid } from '@mui/material'
-import Head from 'next/head'
+import { Container, Grid } from '@mui/material';
+import Head from 'next/head';
+import Link from 'next/link';
 import Typography from '@mui/material/Typography';
 import { ImageButton, ImageSrc, ImageBackdrop, Image, ImageMarked } from '../components/ImageButton';
 
@@ -18,7 +19,7 @@ export default (props) => {
       <Container fixed>
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} spacing={2}>
           <Grid item xs={4}>
-            <img src="/images/hoyatech-logo-only.png" alt="hoyatech" style={{width: "100%"}}/>
+            <img src="/images/hoyatech-logo-only.png" alt="hoyatech" style={{ width: "100%" }}/>
           </Grid>
           <Grid item xs={8}>
           <Typography variant="h3" component="div" gutterBottom>
@@ -28,11 +29,12 @@ export default (props) => {
           <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
               {Array.from(apps).map((app, index) => (
                 <Grid item xs={2} sm={4} md={4} key={index}>
-                  <a href={app.url} target="_blank">
+                  <Link href={app.url}>
+                  <a target="_blank">
                   <ImageButton
                     focusRipple
                     key={app.name}
-                    style={{
+                    style={{ 
                       width: '100%',
                     }}
                   >
@@ -46,6 +48,7 @@ export default (props) => {
                     </Image>
                   </ImageButton>
                   </a>
+                  </Link>
                 </Grid>
               ))}
             </Grid>

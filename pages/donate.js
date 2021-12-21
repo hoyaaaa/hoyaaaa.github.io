@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Container from '@mui/material/Container'
 import Paper from '@mui/material/Paper'
 import Typography from '@mui/material/Typography'
-import { Button } from '@mui/material'
+import Link from 'next/link'
 
 export default (props) => {
   return (
@@ -13,16 +13,19 @@ export default (props) => {
       </Head>
 
   
-      <Container maxWidth="sm" style={{height: '50vh', textAlign: 'center', justifyContent: 'center', verticalAlign: 'middle'}}>
-        <Paper elevation={10} sx={{ width: '100%', verticalAlign: 'middle', padding: '30px'}}>
+      <Container maxWidth="sm" style={{ height: '50vh', textAlign: 'center', justifyContent: 'center', verticalAlign: 'middle' }}>
+        <Paper elevation={10} sx={{ width: '100%', verticalAlign: 'middle', padding: '30px' }}>
           <Typography variant="h3" component="div" gutterBottom>
             Support by donating
           </Typography>
           <Typography variant="h5" gutterBottom component="div">
             If you like this applications, please consider donating.
+            <br/>
             It is a great help to improve the development process and features.
           </Typography>
-          <a href="https://www.buymeacoffee.com/hoyaaaa" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-green.png" alt="Buy Me A Coffee" height="41" width="174"/></a>
+          <Link href="https://www.ko-fi.com/hoyaaaa">
+            <a target="_blank"><img src="/images/kofi.png" alt="Buy Me A Coffee" style={{ width: "50%", marginTop: '20px' }}/></a>
+          </Link>
         </Paper>
       </Container>
 

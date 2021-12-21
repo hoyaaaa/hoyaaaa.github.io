@@ -23,7 +23,7 @@ const styles = {
 }
 
 const tagManagerArgs = {
-    gtmId: "G-9R6JZLBDG0",
+    gtmId: "G-LTLS83ZWYR",
 }
 
 export default class RootApp extends App {

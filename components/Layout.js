@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Link from 'next/link';
 import ResponsiveAppBar from './AppBar';
 
 const drawerWidth = 240;
@@ -27,7 +26,7 @@ class Layout extends Component {
         return (
             <section>
                 <ResponsiveAppBar/>
-                <article style={{
+                <article style={{ 
                     width: `calc(100% - ${open ? drawerWidth : 0}px)`,
                     marginLeft: open ? drawerWidth : 0,
                     transition: 'all 0.2s',
