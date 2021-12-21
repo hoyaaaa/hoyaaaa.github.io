@@ -13,18 +13,20 @@ export default (props) => {
       </Head>
 
   
-      <Container maxWidth="sm" style={{ height: '50vh', textAlign: 'center', justifyContent: 'center', verticalAlign: 'middle' }}>
+      <Container maxWidth="sm" style={{ height: '50vh', justifyContent: 'center', verticalAlign: 'middle' }}>
         <Paper elevation={10} sx={{ width: '100%', verticalAlign: 'middle', padding: '30px' }}>
-          <Typography variant="h3" component="div" gutterBottom>
+          <Typography variant="h3" component="div" gutterBottom style={{ textAlign: 'center' }}>
             Support by donating
           </Typography>
-          <Typography variant="h5" gutterBottom component="div">
-            If you like this applications, please consider donating.
+          <Typography variant="h6" gutterBottom component="div">
+            이 어플리케이션들이 마음에 드신다면,
             <br/>
-            It is a great help to improve the development process and features.
+            기부를 한 번 고려해보세요.
+            <br/>
+            당신의 도움이 개발 과정과 기능 추가에 큰 도움이 됩니다. 감사합니다.
           </Typography>
           <Link href="https://www.ko-fi.com/hoyaaaa">
-            <a target="_blank"><img src="/images/kofi.png" alt="Buy Me A Coffee" style={{ width: "50%", marginTop: '20px' }}/></a>
+            <a target="_blank"><img src="/images/kofi.png" alt="Buy Me A Coffee" style={{ width: "100%", marginTop: '20px' }}/></a>
           </Link>
         </Paper>
       </Container>
