@@ -27,8 +27,9 @@ export default (props) => {
             당신의 도움이 개발 과정과 기능 추가에 큰 도움이 됩니다. 감사합니다.
           </Typography>
           <Link href="https://www.ko-fi.com/hoyaaaa">
-            <a target="_blank"><img src="/images/kofi.png" alt="Buy Me A Coffee" style={{ width: "100%", marginTop: '20px' }}/></a>
+            <a target="_blank"><img src="/images/kofi.png" alt="Kofi" style={{ width: "100%", marginTop: '20px' }}/></a>
           </Link>
+          <img src="/images/kofi_qrcode.png" alt="Kofi" style={{ width: "100%", marginTop: '20px' }}/>
         </Paper>
       </Container>
 
