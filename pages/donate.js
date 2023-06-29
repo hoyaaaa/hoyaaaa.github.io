@@ -10,7 +10,6 @@ export default (props) => {
       <Head>
         <title>HOYA TECH Donation</title>
         <link rel="icon" href="/hoyatech-logo128.png" />
-        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="hoya.develop" data-color="#FFDD00" data-emoji="💻" data-font="Bree" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
       </Head>
 
   
@@ -26,10 +25,12 @@ export default (props) => {
             <br/>
             당신의 도움이 개발 과정과 기능 추가에 큰 도움이 됩니다. 감사합니다.
           </Typography>
+          <img src="/images/kakaopay_qrcode.png" alt="Kofi" style={{ width: "33%", marginTop: '20px' }}/>
+          <img src="/images/toss_qrcode.png" alt="Kofi" style={{ width: "33%", marginTop: '20px' }}/>
           <Link href="https://www.ko-fi.com/hoyaaaa">
-            <a target="_blank"><img src="/images/kofi.png" alt="Kofi" style={{ width: "100%", marginTop: '20px' }}/></a>
+            <a target="_blank"><img src="/images/kofi_qrcode.png" alt="Kofi" style={{ width: "33%", marginTop: '20px' }}/></a>
           </Link>
-          <img src="/images/kofi_qrcode.png" alt="Kofi" style={{ width: "100%", marginTop: '20px' }}/>
+          
         </Paper>
       </Container>
 
