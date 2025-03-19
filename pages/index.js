@@ -14,6 +14,7 @@ export default (props) => {
       <Head>
         <title>HOYA TECH Apps</title>
         <link rel="icon" href="/hoyatech-logo128.png" />
+        <meta name="f9d74e377ebc25fe069b7f3ce9580bd97dc5db69" content="f9d74e377ebc25fe069b7f3ce9580bd97dc5db69" />
       </Head>
 
       <Container fixed>
